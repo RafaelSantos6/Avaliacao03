@@ -1,10 +1,6 @@
-// Avaliacao 03 - Algoritmos de Ordenacao
-// Aluno: [Rafael Cristiano Ricetti Dos Santos]
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <windows.h>
 
 #define TAM_NOME 30
 
@@ -14,7 +10,7 @@ typedef struct
     float nota;
 } Aluno;
 
-Aluno *selectionSort(Aluno *boletim, int tamanho)
+void selectionSort(Aluno *boletim, int tamanho)
 {
     int menor;
     Aluno aux;
@@ -44,23 +40,17 @@ void renderizarBoletim(Aluno *boletim, int tamanho)
     printf("=================================================\n");
     printf("|            Alunos            |      Notas     |\n");
     printf("=================================================\n");
+
     for (int i = 0; i < tamanho; i++)
     {
         printf("| %-29s | %13.2f |\n", boletim[i].nome, boletim[i].nota);
 
-        if (i < tamanho -1)
-        {
-            printf("=================================================\n");
-        }else {
-
-            printf("=================================================\n");
-        } 
-    } 
+        printf("=================================================\n");
+    }
 }
 
 int main()
 {
-
     int qtdNotas = 0;
     printf("Qtd de notas a serem inseridas: ");
     scanf("%d", &qtdNotas);
@@ -69,14 +59,11 @@ int main()
 
     for (int i = 0; i < qtdNotas; i++)
     {
-
         printf("Digite o nome do aluno: ");
-        scanf("%s", &boletim[i].nome);
-        getchar();
+        scanf("%s", boletim[i].nome);
 
         printf("Digite a nota do %s: ", boletim[i].nome);
         scanf("%f", &boletim[i].nota);
-        getchar();
     }
 
     selectionSort(boletim, qtdNotas);
