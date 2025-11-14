@@ -1,15 +1,5 @@
-// Enunciado
-
-// Elabore um programa que permita ao usuário inserir as notas dos alunos e, em seguida, organize essas notas em ordem crescente, utilizando o algoritmo de ordenação por seleção. O programa deve:
-
-// Solicitar ao usuário que insira a quantidade de notas e, em seguida, as notas dos alunos.
-// Ordenar as notas em ordem crescente, utilizando o algoritmo de ordenação por seleção.
-// Exibir a lista de notas ordenadas.
-
-// Requisitos
-
-// Utilize o algoritmo de ordenação por seleção para ordenar as notas.
-// O programa deve ser capaz de lidar com qualquer quantidade de notas inseridas pelo usuário.
+// Avaliacao 03 - Algoritmos de Ordenacao
+// Aluno: [Rafael Cristiano Ricetti Dos Santos]
 
 #include <stdio.h>
 #include <stdlib.h>
